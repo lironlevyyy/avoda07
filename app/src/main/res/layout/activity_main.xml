@@ -8,10 +8,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn"
         android:layout_width="209dp"
         android:layout_height="84dp"
         android:layout_marginBottom="200dp"
+        android:onClick="Clickme"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
