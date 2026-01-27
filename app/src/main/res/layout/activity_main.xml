@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -19,7 +20,7 @@
         android:layout_height="84dp"
         android:layout_marginBottom="200dp"
         android:onClick="Clickme"
-        android:text="Button"
+        android:text="Click me"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/img"
         app:layout_constraintStart_toStartOf="@+id/img"
@@ -29,10 +30,12 @@
         android:id="@+id/img"
         android:layout_width="213dp"
         android:layout_height="187dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="main image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="210dp"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
